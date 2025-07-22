@@ -1,9 +1,7 @@
 package com.codewithkartik.kstore.services.impl;
 
 import com.codewithkartik.kstore.services.PaymentService;
-import org.springframework.stereotype.Service;
 
-@Service("paypal")
 public class PaypalPaymentService implements PaymentService {
 
     @Override

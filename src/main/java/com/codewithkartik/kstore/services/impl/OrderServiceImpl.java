@@ -7,14 +7,13 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import com.codewithkartik.knotification.NotificationManager;
 
-@Service("orderService")
 public class OrderServiceImpl implements OrderService {
 
     private final PaymentService paymentService;
 
     private final NotificationManager notificationManager;
 
-    public OrderServiceImpl(@Qualifier("paypal") PaymentService paymentService, @Autowired NotificationManager notificationManager) {
+    public OrderServiceImpl(PaymentService paymentService, NotificationManager notificationManager) {
         this.paymentService = paymentService;
         this.notificationManager = notificationManager;
     }

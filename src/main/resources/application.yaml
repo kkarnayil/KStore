@@ -1,0 +1,10 @@
+spring:
+  application:
+    name:kstore
+
+kstore:
+  notification-type: msg
+  payment-type: stripe
+
+stripe:
+  timeout: 5000
